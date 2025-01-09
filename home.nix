@@ -1,31 +1,28 @@
 { config, pkgs, ... }:
 
-let 
-  myAliases = {
-    sudo = "sudo ";
-    hms = "home-manager switch ";
-    rebuild = "nixos-rebuild switch --flake";
-  };
-in 
 {
+  # Home Manager needs a bit of information about you and the paths it should
+  # manage.
+
   imports = [
     ./config/default.nix
   ];
 
   home = {
+
     username = "sophos";
     homeDirectory = "/home/sophos";
-    stateVersion = "24.05"; # Please read the comment before changing.
-  };
 
-  home.packages = [
-  ];
+    stateVersion = "24.11"; # Please read the comment before changing.
+    packages = [
+    ];
 
-  home.file = {
-  };
+    file = {
+    };
 
-  home.sessionVariables = {
-    # EDITOR = "emacs";
+    sessionVariables = {
+      EDITOR = "emacs";
+    };
   };
 
   programs = {
@@ -33,9 +30,10 @@ in
 
     bash = {
       enable = true;
-      shellAliases = myAliases;
+      #shellAliases = myAliases;
     };
 
     firefox.enable = true;
   };
 }
+

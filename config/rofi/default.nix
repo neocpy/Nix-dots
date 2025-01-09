@@ -9,8 +9,8 @@
     ".config/rofi/wallbash.rasi".source = ./wallbash.rasi;
   };
 
-  programs.rofi = {
-    enable = true;
-  };
+  # programs.rofi = {
+  #   enable = true;
+  # };
 
 }

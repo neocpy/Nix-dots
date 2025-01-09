@@ -3,7 +3,7 @@
 let 
   myAliases = {
     sudo = "sudo ";
-    hms = "home-manager";
+    hms = "home-manager switch ";
     rebuild = "nixos-rebuild switch --flake";
   };
 in 

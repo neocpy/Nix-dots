@@ -3,16 +3,16 @@
   home.packages = with pkgs; [
   #Desktop
     swww
-    wallust
     grim
     slurp
+    waybar
   #Tools
     swappy
     wl-clipboard
     xdotool
-    pavucontrol
   #Services
-    wireplumber
+    wlogout
+    networkmanagerapplet
   ];
 
   home.sessionVariables = {

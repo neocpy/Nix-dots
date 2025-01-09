@@ -2,15 +2,13 @@
   description = "A very basic flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-   wallust.url = "git+https://codeberg.org/explosion-mental/wallust?ref=master";
-
+    
   };
 
   outputs = { self, nixpkgs, home-manager, ... }: 

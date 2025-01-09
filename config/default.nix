@@ -3,8 +3,9 @@
   imports = [
     #./ags #Bar
     ./alacritty #Terminal emulator
+    # ./emacs
     ./hyprland
-    ./gtk
+    #./gtk
     #./fish #Shell
     ./rofi #Launcher
     #./nvim
@@ -13,6 +14,6 @@
     #./firefox #Firefox
     #./stylix
     #./tmux 
-    ./extra
+    #./extra
   ];
 }
